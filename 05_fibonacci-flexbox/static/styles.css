@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.container {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+
+section.container.reverse {
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+}
+
+section > section {
+    padding: 0.5rem;
+} 
+
+section.item0 {
+    flex: 0;
+    background-color: rgb(83, 19, 0);
+}
+section.item1 {
+    flex: 1;
+    background-color: rgb(102, 24, 0);
+}
+section.item2 {
+    flex: 1;
+    background-color: rgb(121, 65, 0);
+}
+section.item3 {
+    flex: 2;
+    background-color: rgb(146, 95, 0);
+}
+section.item4 {
+    flex: 3;
+    background-color: rgb(148, 121, 0);
+}
+section.item5 {
+    flex: 5;
+    background-color: rgb(142, 145, 0);
+}
+section.item6 {
+    flex: 8;
+    background-color: rgb(143, 168, 0);
+}
+section.item7 {
+    flex: 13;
+    background-color: rgb(122, 175, 0);
+}
+section.item8 {
+    flex: 21;
+    background-color: rgb(99, 175, 0);
+}
+section.item9 {
+    flex: 34;
+    background-color: rgb(50, 175, 0);
+}

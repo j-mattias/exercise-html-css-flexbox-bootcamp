@@ -1,0 +1,24 @@
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 1rem;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.404));
+}
+
+section {
+    background-color: rgb(190, 0, 0);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50rem;
+}

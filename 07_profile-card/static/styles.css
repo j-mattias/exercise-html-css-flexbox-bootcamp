@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 20rem;
+    width: 14rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.2rem;
+}
+
+article.card > img.close {
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+    padding: 0 1rem;
+    opacity: 50%;
+}
+
+article.card > img.close:hover {
+    cursor: pointer;
+}
+
+article.card > .profile-image {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    object-position: center;
+    object-fit: cover;
+    margin: auto 0.4rem;
+}
+
+article.card > h1 {
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+}
+
+article.card > p {
+    opacity: 40%;
+    font-weight: 600;
+}
+
+article.card > button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    border: 0;
+    margin: auto auto 1.5rem auto;
+    font-weight: 600;
+}
+
+article.card > button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}

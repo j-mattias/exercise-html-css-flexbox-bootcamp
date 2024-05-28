@@ -16,77 +16,67 @@ body {
 
 .card {
     display: flex;
-    /* justify-content: space-evenly; */
     width: 50rem;
     height: 25rem;
     background-color: white;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
+/* Padding on the container, instead of elements inside so flex: 1; is 
+consistent for both figure and section container */
 .card > figure.product-image {
     background-color: rgb(255, 184, 31);
     display: flex;
+    padding: 3rem;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
     flex: 1;
 }
 
 figure.product-image > img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin: auto;
-    /* margin: auto 0; */
-    /* padding: 0 3rem; */
+    margin-top: auto;
 }
 
 figure.product-image > figcaption.price {
     font-size: 1.9rem;
     font-weight: 600;
-    margin: 0 2rem 2rem 0; 
+    margin: auto 0 0 auto; 
 }
 
 section.product-details {
     display: flex;
-    /* flex-flow: column nowrap; */
+    flex-flow: column nowrap;
     flex: 1;
-    /* margin: 3rem 2rem 2rem 2rem; */
+    padding: 3rem;
 }
 
-section.product-details > .wrapper > h2 {
+section.product-details > h2 {
     font-size: 2rem;
     font-weight: 800;
     margin-top: 1rem;
 }
 
-section.product-details > .wrapper > h3 {
+section.product-details > h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-section.product-details > .wrapper > p {
+section.product-details > p {
     font-size: 0.9rem;
 }
 
-section.product-details > .wrapper > button {
-    width: fit-content;
+section.product-details > button {
     padding: 0.6rem 1rem;
     font-weight: 800;
     border: 2px solid black;
     background-color: white;
-    align-self: flex-end;
-    margin: auto 0 0 0;
+    margin: auto 0 0 auto;
     cursor: pointer;
 }
 
-section.product-details > .wrapper > button:hover {
+section.product-details > button:hover {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-section.product-details > .wrapper {
-    margin: 2rem;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
 }
